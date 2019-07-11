@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="934.0" prefWidth="1511.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mobileshut.controller.PurchaseOrderController">
+   <children>
+      <ImageView fitHeight="1052.0" fitWidth="1776.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/acc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="14.0" prefHeight="61.0" prefWidth="308.0" text="Purchase Order" textFill="#756314">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="33.0" layoutY="67.0" opacity="0.78" prefHeight="436.0" prefWidth="524.0" spacing="15.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="32.0" prefWidth="150.0" text="Customer Details" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/User_48px.png" />
+               </image>
+            </ImageView>
+            <JFXComboBox fx:id="cmboCustomerId" onAction="#customerIdStateChange" onMouseClicked="#mouseClicked" prefHeight="39.0" prefWidth="221.0" promptText="Search Customer">
+               <styleClass>
+                  <String fx:value="table-view" />
+                  <String fx:value="table-cell" />
+                  <String fx:value="table-row-cell" />
+               </styleClass>
+            </JFXComboBox>
+            <JFXTextField fx:id="txtFname" editable="false" labelFloat="true" prefHeight="47.0" prefWidth="524.0" promptText="First Name#" unFocusColor="#0d0d0d">
+               <font>
+                  <Font name="AGaramondPro-BoldItalic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLname" editable="false" labelFloat="true" prefHeight="58.0" prefWidth="524.0" promptText="Last Name#" unFocusColor="#0d0d0d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNic" editable="false" labelFloat="true" prefHeight="51.0" prefWidth="524.0" promptText="NIC#" unFocusColor="#0d0d0d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" editable="false" labelFloat="true" layoutX="10.0" layoutY="181.0" prefHeight="61.0" prefWidth="524.0" promptText="Address#" unFocusColor="#0d0d0d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="751.0" layoutY="66.0" opacity="0.78" prefHeight="386.0" prefWidth="775.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtInvoiceNo" labelFloat="true" layoutX="90.0" layoutY="20.0" onAction="#txtInvoiceActionPerform" prefHeight="30.0" prefWidth="166.0" promptText="Invoice No " unFocusColor="#070707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/Purchase%20Order_48px.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtOrderDate" layoutX="514.0" layoutY="24.0" />
+            <JFXComboBox fx:id="comboBatchId" editable="true" layoutX="31.0" layoutY="201.0" onAction="#brandIdStateChange" prefHeight="25.0" prefWidth="166.0" promptText="Brand ID">
+               <styleClass>
+                  <String fx:value="table-view" />
+                  <String fx:value="table-cell" />
+                  <String fx:value="table-row-cell" />
+               </styleClass>
+            </JFXComboBox>
+            <JFXTextField fx:id="txtBrandName" labelFloat="true" layoutX="258.0" layoutY="195.0" prefHeight="39.0" prefWidth="166.0" promptText="Brand Name" unFocusColor="#070707">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtOrderQty" labelFloat="true" layoutX="464.0" layoutY="201.0" onAction="#txtQtyActionPerform" prefHeight="29.0" prefWidth="131.0" promptText="Qty" unFocusColor="#070707">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="comboMobileId" focusColor="#405aa8" layoutX="33.0" layoutY="130.0" onAction="#mobileIdStateChange" onMouseClicked="#mouseClicked" prefHeight="25.0" prefWidth="166.0" promptText="Search Mobile">
+               <styleClass>
+                  <String fx:value="table-view" />
+                  <String fx:value="table-cell" />
+                  <String fx:value="table-row-cell" />
+               </styleClass>
+            </JFXComboBox>
+            <JFXTextField fx:id="txtMobileName" labelFloat="true" layoutX="260.0" layoutY="134.0" prefHeight="29.0" prefWidth="166.0" promptText="Mobile Name" unFocusColor="#070707">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtUnitPrice" editable="false" labelFloat="true" layoutX="472.0" layoutY="134.0" prefHeight="25.0" prefWidth="119.0" promptText="Unit Price" unFocusColor="#070707">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQtyOnHand" editable="false" labelFloat="true" layoutX="635.0" layoutY="134.0" prefHeight="25.0" prefWidth="119.0" promptText="QtyOnHand" unFocusColor="#070707">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="1157.0" layoutY="343.0" onAction="#btnAddToCartAction" prefHeight="32.0" prefWidth="166.0" style="-fx-background-color: #5BC0DE;" text="ADD TO TABLE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblPurchaseOrder" layoutX="93.0" layoutY="557.0" prefHeight="313.0" prefWidth="1076.0">
+        <columns>
+          <TableColumn fx:id="columnPurchase" prefWidth="200.0" text="BrandID" />
+            <TableColumn prefWidth="200.0" text="MobileID" />
+            <TableColumn prefWidth="200.0" text="Mobile Name" />
+            <TableColumn prefWidth="200.0" text="Unit Price" />
+            <TableColumn prefWidth="75.0" text="QTY" />
+            <TableColumn prefWidth="200.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Pane layoutX="1202.0" layoutY="524.0" opacity="0.78" prefHeight="301.0" prefWidth="308.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtDiscount" labelFloat="true" layoutX="56.0" layoutY="42.0" onAction="#DiscountActionPerform" prefHeight="39.0" prefWidth="166.0" promptText="Discount/ Rs" unFocusColor="#070707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPaid" labelFloat="true" layoutX="56.0" layoutY="120.0" onAction="#PaidActionPerform" prefHeight="39.0" prefWidth="166.0" promptText="Paid/ Rs" unFocusColor="#070707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtBalance" labelFloat="true" layoutX="56.0" layoutY="214.0" prefHeight="39.0" prefWidth="166.0" promptText="Balance/Rs" unFocusColor="#070707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="1123.0" layoutY="885.0" onAction="#ClearActionPerform" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #5BC0DE;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="83.0" layoutY="512.0" prefHeight="32.0" prefWidth="119.0" text="Item List" underline="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnDone" buttonType="RAISED" layoutX="1364.0" layoutY="885.0" onAction="#DoneActionPerform" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #5BC0DE;" text="DONE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="359.0" layoutY="882.0" prefHeight="38.0" prefWidth="235.0" text="FULL TOTAL  :" textFill="RED">
+         <font>
+            <Font name="ACaslonPro-Semibold" size="31.0" />
+         </font></Label>
+      <Label fx:id="lblFullTotal" layoutX="617.0" layoutY="882.0" prefHeight="31.0" prefWidth="119.0" text="0000.00" textFill="RED">
+         <font>
+            <Font name="ACaslonPro-Semibold" size="31.0" />
+         </font></Label>
+      <Label layoutX="1225.0" layoutY="472.0" prefHeight="31.0" prefWidth="139.0" text="SUB TOTAL  :" textFill="#8208a8">
+         <font>
+            <Font name="ACaslonPro-Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="lblSubTotal" layoutX="1368.0" layoutY="472.0" prefHeight="31.0" prefWidth="119.0" text="0000.00" textFill="#8208a8">
+         <font>
+            <Font name="ACaslonPro-Bold" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="33.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Shopping%20Cart_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

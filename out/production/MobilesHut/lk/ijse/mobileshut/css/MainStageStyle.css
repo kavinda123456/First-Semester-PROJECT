@@ -1,0 +1,17 @@
+
+.imageView{
+    -fx-background-image: url("../assest/images.png");
+    -fx-background-radius: 300px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 300px;
+    -fx-border-color: #ff5312;
+}
+
+.img_style{
+    -fx-background-image: url("../assest/images.png");
+
+    -fx-shape:"M0 13 C0 5 5 0 13 0 L86 0 C94 0 99 5 99 13 L99 86 C99 94 94 99 86 99 L13 99 C5 99 0 94 0 86Z";
+    -fx-border-radius: 300x;
+}
+
+

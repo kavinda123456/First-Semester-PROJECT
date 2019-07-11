@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="972.0" prefWidth="1945.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mobileshut.controller.DashboadController">
+   <children>
+      <ImageView fitHeight="1013.0" fitWidth="1652.0" layoutX="340.0" layoutY="71.0" opacity="0.64" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/117862.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="70.0" prefWidth="1359.0" style="-fx-background-color: #2ECC71;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="266.0" layoutY="4.0" prefHeight="66.0" prefWidth="1236.0" style="-fx-background-color: #090421;" text="MOBILE HUT" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="42.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="7.0" prefHeight="66.0" prefWidth="340.0" style="-fx-background-color: #090421;" text="Dashboard" textFill="#ff000d" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="29.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="home" layoutX="1762.0" layoutY="2.0" onMouseClicked="#goHomeAction" prefHeight="70.0" prefWidth="144.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Home_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="70.0" layoutY="25.0" prefHeight="16.0" prefWidth="61.0" text="HOME" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="63.0" fitWidth="61.0" layoutX="966.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/Mobile_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="71.0" prefHeight="961.0" prefWidth="340.0" style="-fx-background-color: #21618C;" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <VBox layoutX="20.0" layoutY="11.0" prefHeight="622.0" prefWidth="340.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="11.0">
+               <children>
+                  <JFXButton fx:id="btnMobileD" alignment="CENTER" onAction="#itmArrangeOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="WHITE" style="-fx-background-color: #090421;" text="Mobile details" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/Smartphone%20Tablet_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnBrandDetail" alignment="CENTER" onAction="#brandDetailOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="WHITE" style="-fx-background-color: #090421;" text="Manage Brand" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/Windows8%20Tablet_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnHome" alignment="CENTER" buttonType="RAISED" onAction="#homeFeaturesOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="WHITE" style="-fx-background-color: #090421;" text="Warranty Detail" textAlignment="RIGHT" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/Quality_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAddCustomer" alignment="CENTER" buttonType="RAISED" onAction="#viewCustomerOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="WHITE" style="-fx-background-color: #090421;" text="Manage Customer" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="77.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/User_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnOrderDetail" alignment="CENTER" onAction="#orderDetailOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="WHITE" style="-fx-background-color: #090421;" text="Customer Order Details" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="156.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/Shopping%20Cart_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSupplier" alignment="CENTER" onAction="#supplierOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="WHITE" style="-fx-background-color: #090421;" text="Manage Suppliers" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/Supplier_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSupplierOrderDetail" alignment="CENTER" onAction="#supllierOrderDetailOnAction" prefHeight="60.0" prefWidth="320.0" ripplerFill="#f2f2f2" style="-fx-background-color: #090421;" text="Supplier Order Details" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="107.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/Purchase%20Order_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Pane fx:id="pane1" layoutX="63.0" layoutY="603.0" prefHeight="200.0" prefWidth="223.0" styleClass="img_style" stylesheets="@../css/MainStageStyle.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="secondDash" layoutX="340.0" layoutY="75.0" prefHeight="924.0" prefWidth="1652.0" style="-fx-border-radius: 20;" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <AnchorPane fx:id="subdash1" layoutX="33.0" layoutY="56.0" onMouseClicked="#goCustomerView" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="217.0" layoutX="40.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/manage_customer.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="218.0" prefHeight="43.0" prefWidth="251.0" text="Manage Customer">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash2" layoutX="416.0" layoutY="56.0" onMouseClicked="#goMobileDetail" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="193.0" fitWidth="235.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/item-configuration.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="218.0" prefHeight="43.0" prefWidth="251.0" text="View Mobile Detail">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash3" layoutX="802.0" layoutY="56.0" onMouseClicked="#goBrandModel" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="193.0" fitWidth="235.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/brand-icon-png-19.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="218.0" prefHeight="43.0" prefWidth="233.0" text="Manage Brands">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash4" layoutX="1262.0" layoutY="56.0" onMouseClicked="#goWarrenty" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="233.0" layoutX="32.0" layoutY="14.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/warranty.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="218.0" prefHeight="43.0" prefWidth="233.0" text="Create Warranty">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash5" layoutX="33.0" layoutY="416.0" onMouseClicked="#goPurchaseOrder" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="223.0" layoutX="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/purchase-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="218.0" prefHeight="43.0" prefWidth="251.0" text="Purchase Order">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash6" layoutX="416.0" layoutY="416.0" onMouseClicked="#goSupplierView" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/supplier.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="28.0" layoutY="217.0" prefHeight="43.0" prefWidth="251.0" text="Manage Supplier">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash7" layoutX="802.0" layoutY="416.0" onMouseClicked="#goSupplierPayment" opacity="0.82" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="193.0" fitWidth="200.0" layoutX="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/bank_finance_cash_dollar_purchase_money_transfer_buy-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="211.0" prefHeight="43.0" prefWidth="251.0" text="Supplier Orders">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="275.0" fitWidth="490.0" layoutX="1163.0" layoutY="649.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/Mobile-PNG-Image-HD.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="238.0" fitWidth="518.0" layoutX="935.0" layoutY="712.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/logos.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1477.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mobileshut.controller.SecondDashController">
+   <children>
+      <AnchorPane fx:id="secondDash" layoutX="-14.0" prefHeight="918.0" prefWidth="1494.0" style="-fx-border-radius: 20;">
+         <children>
+            <AnchorPane fx:id="subdash1" layoutX="33.0" layoutY="56.0" onMouseClicked="#goCustomerView" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="217.0" layoutX="40.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/manage_customer.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="218.0" prefHeight="43.0" prefWidth="251.0" text="Manage Customer">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash2" layoutX="416.0" layoutY="56.0" onMouseClicked="#goMobileDetail" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="193.0" fitWidth="235.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/item-configuration.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="218.0" prefHeight="43.0" prefWidth="251.0" text="View Mobile Detail">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash3" layoutX="802.0" layoutY="56.0" onMouseClicked="#goBrandModel" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="193.0" fitWidth="235.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/brand-icon-png-19.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="218.0" prefHeight="43.0" prefWidth="233.0" text="Manage Brands">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash4" layoutX="1180.0" layoutY="56.0" onMouseClicked="#goWarrenty" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="233.0" layoutX="32.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/warranty.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="218.0" prefHeight="43.0" prefWidth="233.0" text="Create Warranty">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash5" layoutX="33.0" layoutY="416.0" onMouseClicked="#goPurchaseOrder" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="223.0" layoutX="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/purchase-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="218.0" prefHeight="43.0" prefWidth="251.0" text="Purchase Order">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash6" layoutX="416.0" layoutY="416.0" onMouseClicked="#goSupplierView" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/supplier.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="28.0" layoutY="217.0" prefHeight="43.0" prefWidth="251.0" text="Manage Supplier">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="subdash7" layoutX="802.0" layoutY="416.0" onMouseClicked="#goSupplierPayment" opacity="0.7" prefHeight="275.0" prefWidth="297.0" style="-fx-background-color: #EAECEE;">
+               <children>
+                  <ImageView fitHeight="193.0" fitWidth="200.0" layoutX="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/bank_finance_cash_dollar_purchase_money_transfer_buy-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="23.0" layoutY="211.0" prefHeight="43.0" prefWidth="251.0" text="Supplier Orders">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="275.0" fitWidth="490.0" layoutX="1194.0" layoutY="653.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/Mobile-PNG-Image-HD.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="238.0" fitWidth="518.0" layoutX="971.0" layoutY="704.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/logos.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

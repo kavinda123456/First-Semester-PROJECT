@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="917.0" prefWidth="1592.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mobileshut.controller.SupplierPaymentController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="8.0" opacity="0.86" prefHeight="923.0" prefWidth="529.0" style="-fx-background-color: #FBFCFC;">
+         <children>
+            <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="148.0" layoutY="778.0" onAction="#addOnAction" prefHeight="44.0" prefWidth="187.0" style="-fx-background-color: #5BC0DE; -fx-background-radius: 0;" text="ADD TO ORDER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE ORDER DETAIL" textAlignment="CENTER" wrappingWidth="268.6708984375">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.854368932038835" endY="1.0" startX="0.8543689320388349">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="82.0" prefHeight="25.0" prefWidth="177.0" text="Add to Order" textFill="#a569bd">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="219.0" layoutY="92.0" prefHeight="6.0" prefWidth="213.0" style="-fx-background-color: #A569BD;" />
+            <JFXTextField fx:id="txtSupPayId" focusColor="#1a13fc" labelFloat="true" layoutX="23.0" layoutY="140.0" prefHeight="34.0" prefWidth="378.0" promptText="Supplier payment ID" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQtyHand" focusColor="#1a13fc" labelFloat="true" layoutX="23.0" layoutY="431.0" prefHeight="34.0" prefWidth="378.0" promptText="Qty On Hand" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXComboBox fx:id="comboSupId" layoutX="23.0" layoutY="226.0" onAction="#cmbSupIdChange" prefHeight="44.0" prefWidth="378.0" promptText="Supplier ID" />
+            <JFXComboBox fx:id="comboMobileId" layoutX="23.0" layoutY="317.0" onAction="#cmbMobIdChange" prefHeight="52.0" prefWidth="378.0" promptText="Mobile ID" />
+            <JFXButton fx:id="btnClear" layoutX="450.0" layoutY="51.0" prefHeight="44.0" prefWidth="17.0">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/Refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXTextField fx:id="txtQTY" focusColor="#1a13fc" labelFloat="true" layoutX="23.0" layoutY="518.0" prefHeight="34.0" prefWidth="378.0" promptText="Qty" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSupPrice" focusColor="#1a13fc" labelFloat="true" layoutX="23.0" layoutY="608.0" opacity="0.86" prefHeight="34.0" prefWidth="378.0" promptText="Supplier Unit Price" unFocusColor="BLACK">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblSupPayment" layoutX="677.0" layoutY="246.0" prefHeight="425.0" prefWidth="799.0">
+         <columns>
+            <TableColumn fx:id="columnSPID" prefWidth="200.0" text="Supplier payment ID" />
+            <TableColumn prefWidth="200.0" text="Mobile ID" />
+            <TableColumn prefWidth="200.0" text="Qty" />
+            <TableColumn prefWidth="200.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="886.0" layoutY="781.0" prefHeight="52.0" prefWidth="279.0" text="Full payment :Rs" textFill="RED">
+         <font>
+            <Font name="AGaramondPro-Bold" size="37.0" />
+         </font></Label>
+      <Label fx:id="lblPayment" layoutX="1154.0" layoutY="785.0" prefHeight="25.0" prefWidth="177.0" text="0000.00" textFill="RED">
+         <font>
+            <Font name="AGaramondPro-Bold" size="37.0" />
+         </font></Label>
+      <JFXButton fx:id="btndone" buttonType="RAISED" layoutX="1005.0" layoutY="858.0" onAction="#doneOnAction" prefHeight="44.0" prefWidth="187.0" style="-fx-background-color: #5BC0DE; -fx-background-radius: 0;" text="DONE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtDate" layoutX="1234.0" layoutY="67.0" prefHeight="34.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
