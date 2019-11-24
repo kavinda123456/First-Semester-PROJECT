@@ -25,6 +25,7 @@ import lk.ijse.mobileshut.entity.*;
 
 import java.net.URL;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.ResourceBundle;
@@ -294,6 +295,8 @@ public class PurchaseOrderController implements Initializable {
     }
     private void setOrderDate() {
         txtOrderDate.setText(LocalDate.now().toString());
+//        LocalTime LocalTime2=LocalTime.of(21,30,59,11001);
+//        txtOrderDate.setText(LocalTime2.toString());
     }
 
     private void loadAllCustomers() throws Exception {
